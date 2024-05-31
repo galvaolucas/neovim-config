@@ -6,6 +6,7 @@ return {
   config = function()
     local config = require("catppuccin")
     config.setup({
+      flavour = "mocha",
       transparent_background = false,
       integrations = {
         cmp = true,
@@ -17,6 +18,11 @@ return {
           enabled = true,
           indentscope_color = "",
         },
+      },
+      dim_inactive = {
+        enabled = true,
+        shade = "dark",
+        percentage = 0.15,
       },
     })
     vim.cmd.colorscheme("catppuccin")
